@@ -1,0 +1,155 @@
+{
+    "info": {
+        "_postman_id": "order-management-system",
+        "name": "Order Management System API",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+        {
+            "name": "Add Product",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "url": {
+                    "raw": "http://localhost:5000/api/products",
+                    "host": [
+                        "localhost:5000"
+                    ],
+                    "path": [
+                        "api",
+                        "products"
+                    ]
+                },
+                "body": {
+                    "mode": "raw",
+                    "raw": "{ \"name\": \"Product A\", \"status\": \"instock\", \"manufacturer\": \"Manufacturer Ltd.\" }"
+                }
+            }
+        },
+        {
+            "name": "Change Product Status",
+            "request": {
+                "method": "PUT",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "url": {
+                    "raw": "http://localhost:5000/api/products/STATUS_ID",
+                    "host": [
+                        "localhost:5000"
+                    ],
+                    "path": [
+                        "api",
+                        "products",
+                        ":id"
+                    ]
+                },
+                "body": {
+                    "mode": "raw",
+                    "raw": "{ \"status\": \"outofstock\" }"
+                }
+            }
+        },
+        {
+            "name": "Get Faulty Products",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:5000/api/products/faulty",
+                    "host": [
+                        "localhost:5000"
+                    ],
+                    "path": [
+                        "api",
+                        "products",
+                        "faulty"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Get All Orders",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:5000/api/orders",
+                    "host": [
+                        "localhost:5000"
+                    ],
+                    "path": [
+                        "api",
+                        "orders"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Create Order",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ],
+                "url": {
+                    "raw": "http://localhost:5000/api/orders",
+                    "host": [
+                        "localhost:5000"
+                    ],
+                    "path": [
+                        "api",
+                        "orders"
+                    ]
+                },
+                "body": {
+                    "mode": "raw",
+                    "raw": "{ \"productId\": \"PRODUCT_ID\", \"seller\": \"Seller Inc.\", \"manufacturer\": \"Manufacturer Ltd.\", \"customer\": \"John Doe\", \"quantity\": 5, \"pricePerUnit\": 20 }"
+                }
+            }
+        },
+        {
+            "name": "Get Most Ordered Products",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:5000/api/orders/most-ordered",
+                    "host": [
+                        "localhost:5000"
+                    ],
+                    "path": [
+                        "api",
+                        "orders",
+                        "most-ordered"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "Get Orders & Revenue by Month",
+            "request": {
+                "method": "GET",
+                "url": {
+                    "raw": "http://localhost:5000/api/orders/revenue",
+                    "host": [
+                        "localhost:5000"
+                    ],
+                    "path": [
+                        "api",
+                        "orders",
+                        "revenue"
+                    ]
+                }
+            }
+        }
+    ]
+}
