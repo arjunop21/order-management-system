@@ -1,0 +1,78 @@
+[{
+  "_id": {
+    "$oid": "67f09cc8ee7b3add2f15a8a4"
+  },
+  "name": "Product A",
+  "manufacturer": "M1",
+  "seller": "S1",
+  "status": "instock",
+  "createdAt": {
+    "$date": "2025-04-05T03:00:24.929Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-05T03:00:24.929Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f09d2bee7b3add2f15a8a6"
+  },
+  "name": "Laptop",
+  "manufacturer": "Samsung",
+  "seller": "S2",
+  "status": "faulty",
+  "createdAt": {
+    "$date": "2025-04-05T03:02:03.930Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-05T03:06:59.167Z"
+  },
+  "__v": 0,
+  "lastUpdatedBy": "manufacturer"
+},
+{
+  "_id": {
+    "$oid": "67f0b205372377a820e78fd3"
+  },
+  "name": "Product A",
+  "manufacturer": "Manufacturer Ltd.",
+  "status": "instock",
+  "createdAt": {
+    "$date": "2025-04-05T04:31:01.390Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-05T04:31:01.390Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f0b216372377a820e78fda"
+  },
+  "name": "Product A",
+  "manufacturer": "Manufacturer Ltd.",
+  "status": "instock",
+  "createdAt": {
+    "$date": "2025-04-05T04:31:18.272Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-05T04:31:18.272Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "67f0b258372377a820e78fe1"
+  },
+  "name": "Product A",
+  "manufacturer": "Manufacturer Ltd.",
+  "status": "instock",
+  "createdAt": {
+    "$date": "2025-04-05T04:32:24.826Z"
+  },
+  "updatedAt": {
+    "$date": "2025-04-05T04:32:24.826Z"
+  },
+  "__v": 0
+}]
